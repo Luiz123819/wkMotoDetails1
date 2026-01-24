@@ -1,0 +1,60 @@
+@media screen and (max-width: 768px) {
+    header h1 {
+        color: white;
+    }
+
+    a .btn_contacts {
+        display: NONE;
+    }
+
+    .nav_menu {
+        display: none;
+        flex-direction: column;
+        background: #464646;
+        position: fixed;
+        top: 80px;
+        right: 0px;
+        padding: 30px;
+        width: 100%;
+
+        z-index: 10;
+    }
+
+    .nav_menu a {
+        padding: 0px 0px 10px 0px;
+    }
+
+    .nav_menu.active {
+        display: flex;
+
+    }
+
+    .overlay.active {
+        display: block;
+
+
+    }
+
+    .nav_button_mobile {
+        display: block;
+        cursor: pointer;
+        z-index: 15;
+        color: rgb(255, 255, 255);
+    }
+
+    main {}
+
+    .content_main h1 {
+        font-size: 3rem;
+        width: 100% !important;
+    }
+
+    .content_main span {
+        font-size: 1rem;
+    }
+
+    .btn_contacts_main {
+        width: 100%;
+        /* botão ocupa toda largura no mobile */
+    }
+}
