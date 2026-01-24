@@ -27,3 +27,28 @@ overlay.addEventListener('click', () => {
   navIcon.classList.remove('fa-x');
   navIcon.classList.add('fa-bars');
 });
+
+
+  const swiper = new Swiper('.swiper', {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      320: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 }
+    }
+  });
+
