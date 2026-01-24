@@ -57,4 +57,13 @@
         width: 100%;
         /* botão ocupa toda largura no mobile */
     }
+    .sobre_nos_container .text_sobre_nos{
+        text-align: justify;
+    }
+    .sobre_nos_container{
+        padding: 0 1rem;
+    }
+    .valor{
+        width: 100%;
+    }
 }
