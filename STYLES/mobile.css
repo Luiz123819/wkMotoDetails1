@@ -39,7 +39,7 @@
         display: block;
         cursor: pointer;
         z-index: 15;
-        color: rgb(255, 255, 255);
+        color: rgb(223, 59, 59);
     }
 
     main {}
@@ -66,4 +66,7 @@
     .valor{
         width: 100%;
     }
+    .servicos span{
+
+}
 }

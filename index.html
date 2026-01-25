@@ -12,17 +12,15 @@
 <link rel="stylesheet" href="STYLES/bootstrap.css" />
 
 <!-- Font Awesome (versão correta) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeXc5xWl5lLwzjHyCu6Vq0a8z5d2z7rjzQp2K7r5u5C5Qig=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- Swiper -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
-<body style="background-color: rgb(31, 31, 31);">
+<body style="background-color: rgb(0, 0, 0);">
   <!-- CABEÇALHO -->
   <header>
-    <h1>WK</h1>
+    <img src="logo.webp" alt="" style="width: 100px; ">
 
     <nav class="nav_menu">
       <a href="#">Home</a>
@@ -45,6 +43,7 @@
 
   <!-- HOME -->
   <main>
+  
     <div class="content_main">
       <h1>Transformamos sua moto em <br>uma obra de arte</h1>
       <span>Estética premium para apaixonados por duas rodas</span>
@@ -59,7 +58,7 @@
 
     </div>
   </main>
-  <div class="container">
+  <div class="container" style="background-color: rgb(7, 7, 7);">
     <!-- SOBRE NOS -->
     <section class="sobre_nos_container">
       <h1>Sobre Nós</h1>
@@ -100,33 +99,25 @@
     <!-- SERVICOS -->
     <section class="servicos">
   <h1>Serviços</h1>
-  <div class="container swiper">
+  <span style="margin-bottom: 3rem;" id="serv_span">Do brilho impecável ao cuidado premium, nossos serviços transformam sua moto em uma verdadeira obra de arte sobre rodas.</span>
+  <div class="container swiper" style="margin-top: 3.5rem;">
     <!-- Wrapper principal do Swiper -->
     <div class="swiper-wrapper">
       <!-- Cada card é um slide -->
       <div class="card-item swiper-slide">
-        <i class="fa fa-heart"></i>
-        <h4>Lavagem Simples</h4>
-        <span>Tratamos cada moto como se fosse nossa, com dedicação e carinho.</span>
-        <h5>R$60,00</h5>
+       <img src="imgCarroussel01.png" alt="Image 01 Carrossel" style="width: 100%;">
       </div>
       <div class="card-item swiper-slide">
-        <i class="fa fa-gem"></i>
-        <h4>Polimento Técnico</h4>
-        <span>Brilho intenso e remoção de micro riscos.</span>
-        <h5>R$250,00</h5>
+        <img src="imgCarroussel02.png" alt="Image 01 Carrossel" style="width: 100%;">
       </div>
       <div class="card-item swiper-slide">
-        <i class="fa fa-spray-can"></i>
-        <h4>Envelopamento</h4>
-        <span>Personalização exclusiva com cores e acabamentos diferenciados.</span>
-        <h5>Consultar</h5>
+        <img src="imgCarroussel03.png" alt="Image 01 Carrossel" style="width: 100%;">
       </div>
       <div class="card-item swiper-slide">
-        <i class="fa fa-shield-alt"></i>
-        <h4>Proteção de Pintura</h4>
-        <span>Aplicação de PPF e cerâmica para máxima durabilidade.</span>
-        <h5>Consultar</h5>
+        <img src="imgCarroussel04.png" alt="Image 01 Carrossel" style="width: 100%;">
+      </div>
+      <div class="card-item swiper-slide">
+        <img src="imgCarroussel05.png" alt="Image 01 Carrossel" style="width: 100%;">
       </div>
     </div>
 
@@ -138,7 +129,34 @@
     <div class="swiper-button-next"></div>
   </div>
 </section>
+<!-- FORM -->
+ <section class="contato">
+  <h1>Estética de Motos</h1>
 
+  <span>Sua moto merece mais do que uma lavagem. Na WK Moto Details, cada detalhe é tratado com paixão e precisão. Agende seu atendimento agora!</span>
+
+  <form action="#">
+    <p>
+      <label for="nome">Nome:</label>
+      <input type="text" class="nome" id="nome" placeholder="Seu nome" required>
+    </p>
+     <p>
+      <label for="contato">Contato:</label>
+      <input type="text" class="contato" id="contato" placeholder="Seu contato" required>
+    </p>
+
+     <p>
+      <label for="moto">Moto:</label>
+      <input type="text" class="moto" id="moto" placeholder="Sua moto" required>
+    </p>
+     <p>
+      <label for="serv">Serviço:</label>
+     <!-- Combobox --> <select name="serv" required> <option value="">Selecione o serviço desejado</option> <option value="lavagem">Lavagem Completa</option> <option value="polimento">Polimento e Proteção</option> <option value="detalhamento">Detalhamento Premium</option> <option value="higienizacao">Higienização de Banco e Carenagem</option> </select>
+    </p>
+
+    <button>Solicitar Orçamento</button>
+  </form>
+ </section>
   </div>
   <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>

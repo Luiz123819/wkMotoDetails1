@@ -17,7 +17,7 @@ header {
     width: 100%;
     height: 80px;
     padding: 10px 20px;
-    background-color: var(--color05);
+    background-color: rgb(34, 33, 33);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -128,7 +128,7 @@ a #button {
 }
 
 main {
-    background-image: url('/images/imgFundoMain.jpg');
+    background-image: url('/Copilot_20260125_143758.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -167,6 +167,7 @@ main::before {
 }
 
 .content_main h1 {
+    
     font-size: clamp(2rem, 5vw, 3.5rem);
     /* ajusta dinamicamente */
     font-weight: bold;
@@ -249,18 +250,19 @@ main::before {
 
     align-items: center;
     justify-content: center;
-   
+   padding: 1rem;
     gap:30px
 }
-.sobre_nos_container h1{
-    margin-top: 30px;
+.sobre_nos_container h1{  text-transform: uppercase;
+    margin-top: 3.5rem; letter-spacing: 2px;
     font-size: clamp(2rem, 5vw, 3rem);
     font-weight: bold;
-    color: #b90000;
+    color: #f00;
 }
 .sobre_nos_container .text_sobre_nos{
     font-size: clamp(1rem, 3vw, 1.2rem);
     color: rgb(165, 165, 165);
+    margin-bottom: 4rem;
    
 }
 .valores{
@@ -294,6 +296,7 @@ main::before {
 
 .valor:hover {
     transform: scale(1.05); /* corrigido */
+   background-color: rgba(24, 24, 24, 0.548);
 }
 
 @keyframes pulseNeon {
@@ -335,35 +338,31 @@ main::before {
 }
 .servicos {
   padding: 50px 20px;
-  text-align: center;
-
+  
+text-align: center !important;
   color: #eee;
 }
 
-.servicos h1 {
+.servicos h1 {letter-spacing: 2px;
+    text-align: center;
   font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: bold;
+  margin-bottom: 2rem !important;
   color: #f00;
   margin-bottom: 30px;
   text-transform: uppercase;
 }
+.servicos#serv_span{
 
-.card-item {
-  background: #000000;
-  border: 2px solid #cc0000;
-  border-radius: 1.5rem;
-  padding: 2rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  box-shadow: 0 0 8px #ff0000, 0 0 15px #ff0000;
-  transition: 0.4s ease-in-out;
-  height: 300px !important;
+     font-weight: 500;
+    color: #ffffff65;
+      
 }
 
-.card-item:hover {
+
+.card-item img:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 12px #ff1a1a, 0 0 25px #ff1a1a;
+  
 }
 
 .card-item i {
@@ -371,25 +370,10 @@ main::before {
   color: #ff0000;
 }
 
-.card-item h4 {
-  font-weight: 700;
-  color: #fff;
-  font-size: 1.5rem;
-  margin: 0;
-}
 
-.card-item span {
-  font-weight: 500;
-  color: #ccc;
-  font-size: 0.95rem;
-  text-align: center;
-}
 
-.card-item h5 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #00aaff;
-}
+
+
 /* Paginação */
 .swiper-pagination-bullet {
   background: #f00 !important;   /* cor dos pontos */
@@ -403,11 +387,108 @@ main::before {
 /* Botões */
 .swiper-button-prev,
 .swiper-button-next {
-  color: rgb(211, 8, 8) !important;        /* cor das setas */
+  color: rgb(211, 8, 8) !important;  
+  text-shadow: 0 0 10px 10px rgba(255, 0, 0, 0.6) !important;
+  /* cor das setas */
   font-weight: bold;
   transition: color 0.3s ease;
 }
+
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   color: #fff;        /* cor no hover */
+}
+
+ .contato {
+  max-width: 700px;
+ 
+  margin: 60px auto;
+  padding: 40px;
+  background: linear-gradient(145deg, #1a1a1a, #222222); /* preto/cinza elegante */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+  text-align: center;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.contato h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: bold;
+ 
+  color: #f00;
+ 
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contato span {
+    
+  font-weight: 500;
+  color: #ffffff65;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.contato form p {
+  margin: 15px 0;
+  text-align: left;
+}
+
+.contato label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #f00;
+}
+
+.contato input, 
+.contato select {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #333;
+  color: #777676;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+.contato input:focus, 
+.contato select:focus {
+  outline: none;
+  background: #444;
+  box-shadow: 0 0 8px #ff2e2e;
+}
+
+.contato input:hover, 
+.contato select:hover {
+  background: #3a3a3a;
+}
+
+/* Botão estilizado */
+.contato button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 6px;
+  background: #ff2e2e;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255,46,46,0.4);
+}
+
+.contato button:hover {
+  background: #e62e2e;
+  box-shadow: 0 6px 16px rgba(255,46,46,0.6);
+  transform: translateY(-2px);
+}
+
+/* Animação suave */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
