@@ -69,4 +69,30 @@
     .servicos span{
 
 }
+.galeria {
+    
+    padding: 1;
+   
+}
+.imgs{
+    
+  margin-bottom: 2.5rem;
+}
+.imgs .fotoCard{
+    width: 8rem;
+    height: 8rem;
+}
+.verMaisBTN{
+    margin-top: 3rem !important;
+}
+.mapa{
+    text-align: justify;
+}
+.mapa h1{
+    margin-bottom: -20px !important;
+}
+.rodape-conteudo{
+    padding: 2rem 3rem;
+    gap: 30px;
+}
 }

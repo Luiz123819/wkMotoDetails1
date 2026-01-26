@@ -1,172 +1,320 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WK MOTO DETAILS</title>
-</head>
-<!-- LINKS -->
-<link rel="stylesheet" href="STYLES/style.css" />
-<link rel="stylesheet" href="STYLES/mobile.css" />
-<link rel="stylesheet" href="STYLES/bootstrap.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WK MOTO DETAILS</title>
+  </head>
+  <!-- LINKS -->
+  <link rel="stylesheet" href="STYLES/style.css" />
+  <link rel="stylesheet" href="STYLES/mobile.css" />
+  <link rel="stylesheet" href="STYLES/bootstrap.css" />
 
-<!-- Font Awesome (versão correta) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font Awesome (versão correta) -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<!-- Swiper -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <!-- Swiper -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
-<body style="background-color: rgb(0, 0, 0);">
-  <!-- CABEÇALHO -->
-  <header>
-    <img src="logo.webp" alt="" style="width: 100px; ">
+  <body style="background-color: rgb(0, 0, 0);">
+    <!-- CABEÇALHO -->
+    <header>
+      <img src="logo.webp" alt style="width: 100px; ">
 
-    <nav class="nav_menu">
-      <a href="#">Home</a>
-      <a href="#">Quem Somos</a>
-      <a href="#">Nossos Serviços</a>
-    </nav>
+      <nav class="nav_menu">
+        <a href="#">Home</a>
+        <a href="#">Quem Somos</a>
+        <a href="#">Nossos Serviços</a>
+      </nav>
 
-    <a href="#">
-      <button class="btn_contacts" id="button">Contato</button>
-    </a>
+      <a href="#">
+        <button class="btn_contacts" id="button">Contato</button>
+      </a>
 
-    <!-- Botão mobile -->
-    <div class="nav_button_mobile">
-      <i class="fa fa-bars" style="font-size: 40px"></i>
-    </div>
-  </header>
-
-  <!-- Overlay -->
-  <div class="overlay"></div>
-
-  <!-- HOME -->
-  <main>
-  
-    <div class="content_main">
-      <h1>Transformamos sua moto em <br>uma obra de arte</h1>
-      <span>Estética premium para apaixonados por duas rodas</span>
-      <div class="div_buttons_main">
-        <a href="#">
-          <button class="btn_contacts_main" id="button">Contato</button>
-        </a>
-        <a href="#">
-          <button class="btn_service_main" id="button">Serviços</button>
-        </a>
+      <!-- Botão mobile -->
+      <div class="nav_button_mobile">
+        <i class="fa fa-bars" style="font-size: 40px"></i>
       </div>
+    </header>
 
-    </div>
-  </main>
-  <div class="container" style="background-color: rgb(7, 7, 7);">
-    <!-- SOBRE NOS -->
-    <section class="sobre_nos_container">
-      <h1>Sobre Nós</h1>
+    <!-- Overlay -->
+    <div class="overlay"></div>
 
-      <span class="text_sobre_nos">A WK Moto Details nasceu da paixão por
-        motos e da vontade de oferecer um cuidado diferenciado para cada
-        cliente. Desde o início, o foco sempre foi entregar serviços de
-        estética de alta qualidade, utilizando produtos premium e técnicas
-        modernas para garantir brilho, proteção e exclusividade.</span>
+    <!-- HOME -->
+    <main>
 
-      <div class="valores">
-        <div class="valor">
-          <i class="fas fa-heart"></i>
-          <h4>Paixão</h4>
-          <span>Tratamos cada moto como se fosse nossa, com dedicação e
-            carinho.</span>
+      <div class="content_main">
+        <h1>Transformamos sua moto em <br>uma obra de arte</h1>
+        <span>Estética premium para apaixonados por duas rodas</span>
+        <div class="div_buttons_main">
+          <a href="#">
+            <button class="btn_contacts_main" id="button">Contato</button>
+          </a>
+          <a href="#">
+            <button class="btn_service_main" id="button">Serviços</button>
+          </a>
         </div>
-        <div class="valor">
-          <i class="fas fa-star"></i>
-          <h4>Qualidade</h4>
-          <span>Utilizamos apenas produtos premium e técnicas
-            avançadas.</span>
-        </div>
-        <div class="valor">
-          <i class="fas fa-handshake"></i>
-          <h4>Transparência</h4>
-          <span>Preços justos e comunicação clara com nossos clientes.</span>
-        </div>
-      </div>
-      <div class="valor" id="valor_maior">
-        <i class="fas fa-user-check"></i>
-        <h4>Atendimento</h4>
-        <span>Cada moto recebe um cuidado único, de acordo com o estilo do
-          proprietário.</span>
-      </div>
 
-    </section>
-    <!-- SERVICOS -->
-    <section class="servicos">
-  <h1>Serviços</h1>
-  <span style="margin-bottom: 3rem;" id="serv_span">Do brilho impecável ao cuidado premium, nossos serviços transformam sua moto em uma verdadeira obra de arte sobre rodas.</span>
-  <div class="container swiper" style="margin-top: 3.5rem;">
-    <!-- Wrapper principal do Swiper -->
-    <div class="swiper-wrapper">
-      <!-- Cada card é um slide -->
-      <div class="card-item swiper-slide">
-       <img src="imgCarroussel01.png" alt="Image 01 Carrossel" style="width: 100%;">
       </div>
-      <div class="card-item swiper-slide">
-        <img src="imgCarroussel02.png" alt="Image 01 Carrossel" style="width: 100%;">
-      </div>
-      <div class="card-item swiper-slide">
-        <img src="imgCarroussel03.png" alt="Image 01 Carrossel" style="width: 100%;">
-      </div>
-      <div class="card-item swiper-slide">
-        <img src="imgCarroussel04.png" alt="Image 01 Carrossel" style="width: 100%;">
-      </div>
-      <div class="card-item swiper-slide">
-        <img src="imgCarroussel05.png" alt="Image 01 Carrossel" style="width: 100%;">
-      </div>
+    </main>
+    <div class="container" style="background-color: rgb(7, 7, 7);">
+      <!-- SOBRE NOS -->
+      <section class="sobre_nos_container">
+        <h1>Sobre Nós</h1>
+
+        <span class="text_sobre_nos">A WK Moto Details nasceu da paixão por
+          motos e da vontade de oferecer um cuidado diferenciado para cada
+          cliente. Desde o início, o foco sempre foi entregar serviços de
+          estética de alta qualidade, utilizando produtos premium e técnicas
+          modernas para garantir brilho, proteção e exclusividade.</span>
+
+        <div class="valores">
+          <div class="valor">
+            <i class="fas fa-heart"></i>
+            <h4>Paixão</h4>
+            <span>Tratamos cada moto como se fosse nossa, com dedicação e
+              carinho.</span>
+          </div>
+          <div class="valor">
+            <i class="fas fa-star"></i>
+            <h4>Qualidade</h4>
+            <span>Utilizamos apenas produtos premium e técnicas
+              avançadas.</span>
+          </div>
+          <div class="valor">
+            <i class="fas fa-handshake"></i>
+            <h4>Transparência</h4>
+            <span>Preços justos e comunicação clara com nossos clientes.</span>
+          </div>
+        </div>
+        <div class="valor" id="valor_maior">
+          <i class="fas fa-user-check"></i>
+          <h4>Atendimento</h4>
+          <span>Cada moto recebe um cuidado único, de acordo com o estilo do
+            proprietário.</span>
+        </div>
+
+      </section>
+      <!-- GALERIA -->
+      <section class="galeria">
+        <h1>Galeria</h1>
+
+        <span>A estética das motos vai além da mecânica: é expressão de estilo,
+          identidade e atitude. Cada detalhe — linhas, cores, acabamentos e
+          proporções — traduz personalidade e transforma a máquina em obra de
+          arte. Nossa galeria destaca essa beleza única, onde design e emoção se
+          encontram sobre duas rodas.</span>
+
+        <div class="fotos">
+          <div class="row">
+            <div class="col-sm-12 imgs">
+              <div class="fotoCard">
+                <img src="img01.jpg" alt="Foto Galeria" class="foto">
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="fotoCard">
+                <img src="img02.jpg" alt="Foto Galeria" class="foto">
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="fotoCard">
+                <img src="img03.jpg" alt="Foto Galeria" class="foto">
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="fotoCard">
+                <img src="img04.jpg" alt="Foto Galeria" class="foto">
+                <i class="fa fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <!-- - -->
+          <div class="row">
+            <div class="col-sm-12 imgs">
+              <div class="fotoCard">
+                <img src="img5.jpg" alt="Foto Galeria" class="foto">
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="fotoCard">
+                <img src="img6.jpg" alt="Foto Galeria" class="foto">
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="fotoCard">
+                <img src="img7.jpg" alt="Foto Galeria" class="foto">
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="fotoCard">
+                <img src="img8.jpg" alt="Foto Galeria" class="foto">
+                <i class="fa fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <!-- - -->
+          <div class="row lineHidden">
+            <div class="col-sm-12 imgs">
+              <div class="fotoCard">
+                <img src="img9.jpg" alt="Foto Galeria" class="foto">
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="fotoCard">
+                <img src="img10.jpg" alt="Foto Galeria" class="foto">
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="fotoCard">
+                <img src="img11.jpg" alt="Foto Galeria" class="foto">
+                <i class="fa fa-heart"></i>
+              </div>
+              <div class="fotoCard">
+                <img src="img12.jpg" alt="Foto Galeria" class="foto">
+                <i class="fa fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <button class="verMaisBTN">Ver Mais</button>
+
+        </div>
+
+      </section>
+      <!-- SERVICOS -->
+      <section class="servicos">
+        <h1>Serviços</h1>
+        <span style="margin-bottom: 3rem;" id="serv_span">Do brilho impecável ao
+          cuidado premium, nossos serviços transformam sua moto em uma
+          verdadeira obra de arte sobre rodas.</span>
+        <div class="container swiper" style="margin-top: 3.5rem;">
+          <!-- Wrapper principal do Swiper -->
+          <div class="swiper-wrapper">
+            <!-- Cada card é um slide -->
+            <div class="card-item swiper-slide">
+              <img src="imgCarroussel01.png" alt="Image 01 Carrossel"
+                style="width: 100%;">
+            </div>
+            <div class="card-item swiper-slide">
+              <img src="imgCarroussel02.png" alt="Image 01 Carrossel"
+                style="width: 100%;">
+            </div>
+            <div class="card-item swiper-slide">
+              <img src="imgCarroussel03.png" alt="Image 01 Carrossel"
+                style="width: 100%;">
+            </div>
+            <div class="card-item swiper-slide">
+              <img src="imgCarroussel04.png" alt="Image 01 Carrossel"
+                style="width: 100%;">
+            </div>
+            <div class="card-item swiper-slide">
+              <img src="imgCarroussel05.png" alt="Image 01 Carrossel"
+                style="width: 100%;">
+            </div>
+          </div>
+
+          <!-- Paginação -->
+          <div class="swiper-pagination"></div>
+
+          <!-- Botões de navegação -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      <!-- FORM -->
+      <section class="contato">
+        <h1>Estética de Motos</h1>
+
+        <span>Sua moto merece mais do que uma lavagem. Na WK Moto Details, cada
+          detalhe é tratado com paixão e precisão. Agende seu atendimento
+          agora!</span>
+
+        <form action="#">
+          <p>
+            <label for="nome">Nome:</label>
+            <input type="text" class="nome" id="nome" placeholder="Seu nome"
+              required>
+          </p>
+          <p>
+            <label for="contato">Contato:</label>
+            <input type="text" class="contato" id="contato"
+              placeholder="Seu contato" required>
+          </p>
+
+          <p>
+            <label for="moto">Moto:</label>
+            <input type="text" class="moto" id="moto" placeholder="Sua moto"
+              required>
+          </p>
+          <p>
+            <label for="serv">Serviço:</label>
+            <!-- Combobox --> <select name="serv" required>
+              <option value>Selecione o serviço desejado</option>
+              <option value="lavagem">Lavagem Completa</option>
+              <option value="polimento">Polimento e Proteção</option>
+              <option value="detalhamento">Detalhamento Premium</option>
+              <option value="higienizacao">Higienização de Banco e
+                Carenagem</option>
+            </select>
+          </p>
+
+          <button>Solicitar Orçamento</button>
+        </form>
+      </section>
+
+      <!-- MAPA -->
+      <section class="mapa">
+        <h1> <i class="fa-solid fa-location-dot"></i>Venha nos visitar</h1>
+        <span> A estrada até nós vale a viagem: venha conhecer o espaço onde a
+          estética das motos ganha vida!</span>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.3029516075944!2d-46.45833812549371!3d-23.413421056172172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce8a344ede75e9%3A0x59d72a9dd01c2c35!2sAv.%20Juarez%20T%C3%A1vora%2C%20202%20-%20Jardim%20Sao%20Joao%2C%20Guarulhos%20-%20SP%2C%2007151-030!5e0!3m2!1spt-BR!2sbr!4v1769450504826!5m2!1spt-BR!2sbr"
+          width="100%" height="450" style="border:0; border-radius: 10px; margin-bottom: 100px;" allowfullscreen
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+      </section>
+    </div>
+    <!-- FOOTER -->
+     <footer class="rodape">
+  <div class="rodape-conteudo">
+    <div class="rodape-logo">
+     <img src="logo.webp" alt="Logo">
+      <p>Transformando máquinas em obras <br> de arte sobre rodas.</p>
     </div>
 
-    <!-- Paginação -->
-    <div class="swiper-pagination"></div>
+    <div class="rodape-links">
+      <h3>Links rápidos</h3>
+      <ul>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#mapa">Localização</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
 
-    <!-- Botões de navegação -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+    <div class="rodape-contato">
+      <h3>Contato</h3>
+      <p><i class="fa-solid fa-phone"></i> (11) 99835-0428</p>
+      <p><i class="fa-solid fa-envelope"></i> weverton.kayke07@gmail.com</p>
+      <p><i class="fa-solid fa-location-dot"></i> Guarulhos - SP</p>
+    </div>
+
+    <div class="rodape-social">
+      <h3>Siga-nos</h3>
+      <a href="https://wa.me/5511999999999" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://facebook.com/seupagina" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://instagram.com/seupagina" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
   </div>
-</section>
-<!-- FORM -->
- <section class="contato">
-  <h1>Estética de Motos</h1>
 
-  <span>Sua moto merece mais do que uma lavagem. Na WK Moto Details, cada detalhe é tratado com paixão e precisão. Agende seu atendimento agora!</span>
-
-  <form action="#">
-    <p>
-      <label for="nome">Nome:</label>
-      <input type="text" class="nome" id="nome" placeholder="Seu nome" required>
-    </p>
-     <p>
-      <label for="contato">Contato:</label>
-      <input type="text" class="contato" id="contato" placeholder="Seu contato" required>
-    </p>
-
-     <p>
-      <label for="moto">Moto:</label>
-      <input type="text" class="moto" id="moto" placeholder="Sua moto" required>
-    </p>
-     <p>
-      <label for="serv">Serviço:</label>
-     <!-- Combobox --> <select name="serv" required> <option value="">Selecione o serviço desejado</option> <option value="lavagem">Lavagem Completa</option> <option value="polimento">Polimento e Proteção</option> <option value="detalhamento">Detalhamento Premium</option> <option value="higienizacao">Higienização de Banco e Carenagem</option> </select>
-    </p>
-
-    <button>Solicitar Orçamento</button>
-  </form>
- </section>
+  <div class="rodape-copy">
+    <p>&copy; 2026 Estética de Motos. Todos os direitos reservados.</p>
   </div>
-  <!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+</footer>
+    <!-- Swiper JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
- <!-- Scripts locais -->
-  
-<script src="JS/bootstrap.js"></script>
-<script src="JS/main.js"></script>
+    <!-- Scripts locais -->
 
+    <script src="JS/bootstrap.js"></script>
+    <script src="JS/main.js"></script>
 
-</body>
+  </body>
 
 </html>

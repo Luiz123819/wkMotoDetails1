@@ -1,93 +1,104 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato - WK Moto Details</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: url('fundo-estetica.jpg') no-repeat center center;
-      background-size: cover;
-      color: #fff;
-    }
+<footer class="rodape">
+  <div class="rodape-conteudo">
+    <div class="rodape-logo">
+      <h2>Estética de Motos</h2>
+      <p>Transformando máquinas em obras de arte sobre rodas.</p>
+    </div>
 
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 60px 20px;
-      text-align: center;
-    }
+    <div class="rodape-links">
+      <h3>Links rápidos</h3>
+      <ul>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#mapa">Localização</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
 
-    h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-      color: #ff3c3c;
-    }
+    <div class="rodape-contato">
+      <h3>Contato</h3>
+      <p><i class="fa-solid fa-phone"></i> (11) 99999-9999</p>
+      <p><i class="fa-solid fa-envelope"></i> contato@motos.com</p>
+      <p><i class="fa-solid fa-location-dot"></i> Guarulhos - SP</p>
+    </div>
 
-    p {
-      font-size: 1.2em;
-      max-width: 700px;
-      margin: 0 auto 40px;
-    }
-
-    .form-container {
-      max-width: 500px;
-      margin: 0 auto;
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 30px;
-      border-radius: 10px;
-    }
-
-    input, textarea, button {
-      width: 100%;
-      padding: 12px;
-      margin: 10px 0;
-      border: none;
-      border-radius: 5px;
-      font-size: 1em;
-    }
-
-    input, textarea {
-      background-color: #fff;
-      color: #000;
-    }
-
-    button {
-      background-color: #ff3c3c;
-      color: #fff;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #e62e2e;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2em;
-      }
-
-      .form-container {
-        padding: 20px;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="overlay">
-    <h1>Estética de Moto</h1>
-    <p>Sua moto merece mais do que uma lavagem. Na WK Moto Details, cada detalhe é tratado com paixão e precisão. Agende seu atendimento agora!</p>
-
-    <div class="form-container">
-      <form>
-        <input type="text" name="nome" placeholder="Seu nome" required>
-        <input type="email" name="email" placeholder="Seu e-mail" required>
-        <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
+    <div class="rodape-social">
+      <h3>Siga-nos</h3>
+      <a href="https://wa.me/5511999999999" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://facebook.com/seupagina" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://instagram.com/seupagina" target="_blank"><i class="fa-brands fa-instagram"></i></a>
     </div>
   </div>
-</body>
-</html>
+
+  <div class="rodape-copy">
+    <p>&copy; 2026 Estética de Motos. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<style>
+.rodape {
+  background: #111;
+  color: #fff;
+  padding: 3rem 1rem 1rem;
+}
+
+.rodape-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.rodape-logo h2 {
+  color: #e50914;
+  margin-bottom: 0.5rem;
+}
+
+.rodape-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.rodape-links ul li {
+  margin: 0.5rem 0;
+}
+
+.rodape-links ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.rodape-links ul li a:hover {
+  color: #e50914;
+}
+
+.rodape-contato p {
+  margin: 0.5rem 0;
+}
+
+.rodape-contato i {
+  color: #e50914;
+  margin-right: 8px;
+}
+
+.rodape-social a {
+  color: #ccc;
+  font-size: 1.8rem;
+  margin-right: 1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.rodape-social a:hover {
+  color: #e50914;
+  transform: scale(1.2);
+}
+
+.rodape-copy {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+</style>
