@@ -1,0 +1,132 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #000000e1 0%, #000000 100%);
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Logo e conteúdo */
+.logo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    animation: fadeInDown 1s ease forwards;
+    margin-top: 40px;
+}
+
+.logo-content .logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 6px rgba(27, 27, 27, 0.7);
+    transition: transform 0.3s ease;
+}
+
+.logo-content .logo:hover {
+    transform: scale(1.1);
+}
+
+.logo-content p {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 8px rgba(24, 24, 24, 0.8);
+}
+
+/* Container de botões centralizado */
+.buttons_telaIni {
+    width: 100%;
+    max-width: 400px;
+    margin-top: auto;
+    margin-bottom: 4rem;
+    animation: fadeInUp 1s ease forwards;
+}
+
+/* Botão ocupar 100% */
+.buttons_telaIni .btn_entrar {
+    width: 100%;
+    background: rgb(0, 0, 255);
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+    transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
+}
+
+/* Hover */
+.buttons_telaIni .btn_entrar:hover {
+background-color: rgba(0, 0, 255, 0.315);
+    transform: scale(1.02);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.9);
+    text-shadow: 0 0 10px rgba(25, 118, 210, 0.9);
+}
+
+/* Active */
+.buttons_telaIni .btn_entrar:active {
+    transform: scale(0.98);
+    background: linear-gradient(135deg, #0a0a0a, #0d47a1);
+    text-shadow: none;
+}
+
+/* Texto com brilho */
+.buttons_telaIni .btn_entrar span {
+    display: inline-block;
+    animation: glowText 2s infinite alternate;
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glowText {
+    0% {
+        text-shadow: 0 0 5px #1976d2, 0 0 10px #0d47a1;
+    }
+    50% {
+        text-shadow: 0 0 20px #1976d2, 0 0 30px #0d47a1;
+    }
+    100% {
+        text-shadow: 0 0 5px #1976d2, 0 0 10px #0d47a1;
+    }
+}
